@@ -46,10 +46,10 @@ public class VerifyCodeUtils {
             sources = VERIFY_CODES;
         }
         int codesLen = sources.length();
-        Random rand = new Random(System.currentTimeMillis());
+        Random rand = new Random();
         StringBuilder verifyCode = new StringBuilder(verifySize);
         for (int i = 0; i < verifySize; i++) {
-            verifyCode.append(sources.charAt(rand.nextInt(codesLen - 1)));
+            verifyCode.append(sources.charAt(rand.nextInt(codesLen)));
         }
         return verifyCode.toString();
     }
