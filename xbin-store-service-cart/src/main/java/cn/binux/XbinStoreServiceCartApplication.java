@@ -12,10 +12,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement
 @MapperScan(basePackages = "cn.binux.mapper")
-public class XbinStoreServiceSSOApplication {
+public class XbinStoreServiceCartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(XbinStoreServiceSSOApplication.class, args);
+		SpringApplication.run(XbinStoreServiceCartApplication.class, args);
 
 	}
 }
